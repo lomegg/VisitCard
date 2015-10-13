@@ -1,0 +1,26 @@
+.white{
+    background: white;
+    display: block;
+    padding: 30px 20px;
+    -webkit-box-shadow: 4px 3px 27px -2px rgba(0,0,0,0.25);
+    -moz-box-shadow: 4px 3px 27px -2px rgba(0,0,0,0.25);
+    box-shadow: 4px 3px 27px -2px rgba(0,0,0,0.25);
+}
+
+.cutout{
+    background: url(../img/pattern1.png);
+    padding: 20px;
+    -webkit-box-shadow: inset 4px 3px 27px -2px rgba(0,0,0,0.25);
+    -moz-box-shadow: inset 4px 3px 27px -2px rgba(0,0,0,0.25);
+    box-shadow: inset 4px 3px 27px -2px rgba(0,0,0,0.25);
+}
+
+.skilltag{
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 700;
+}
+
+.spacer-20{
+    display: block;
+    height: 20px;
+}

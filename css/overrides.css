@@ -1,3 +1,13 @@
 body{
     background: url(../img/pattern1.png);
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: 400;
+}
+
+.title{
+    text-align: center;
+}
+.title h1{
+    font-size: 40px;
+    margin-top: 10px;
 }
