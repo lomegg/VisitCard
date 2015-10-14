@@ -1,18 +1,59 @@
 .white{
-    background: white;
+    //background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/ricepaper_v3.png);
+    background: url(../img/light-diagonal-wide-left-to-right2.png);
     display: block;
     padding: 30px 20px;
     -webkit-box-shadow: 4px 3px 27px -2px rgba(0,0,0,0.25);
     -moz-box-shadow: 4px 3px 27px -2px rgba(0,0,0,0.25);
     box-shadow: 4px 3px 27px -2px rgba(0,0,0,0.25);
+    border-radius: 15px;
+    border: 2px solid rgba(21, 13, 11, 0.09);
+    color: white;
 }
 
 .cutout{
-    background: url(../img/pattern1.png);
+    // background: url(../img/pattern1.png);
     padding: 20px;
-    -webkit-box-shadow: inset 4px 3px 27px -2px rgba(0,0,0,0.25);
-    -moz-box-shadow: inset 4px 3px 27px -2px rgba(0,0,0,0.25);
-    box-shadow: inset 4px 3px 27px -2px rgba(0,0,0,0.25);
+    height: 2000px;
+    //-webkit-box-shadow: inset 4px 3px 27px -2px rgba(0,0,0,0.25);
+    //-moz-box-shadow: inset 4px 3px 27px -2px rgba(0,0,0,0.25);
+    //box-shadow: inset 4px 3px 27px -2px rgba(0,0,0,0.25);
+}
+
+/* Fancy lines */
+.fancy {
+    line-height: 0.5;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.fancy span {
+    display: inline-block;
+    position: relative;
+}
+.fancy span:before,
+.fancy span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    top: 8px;
+    width: 130px;
+}
+.fancy span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+.fancy span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+/* Speech bubbles */
+
+.speech {
+    position: relative;
 }
 
 .skilltag{
@@ -20,7 +61,15 @@
     font-weight: 700;
 }
 
+.spacer-10{
+    display: block;
+    height: 10px;
+}
 .spacer-20{
     display: block;
     height: 20px;
+}
+.spacer-40{
+    display: block;
+    height: 40px;
 }

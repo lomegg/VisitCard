@@ -1,0 +1,65 @@
+#logo {
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+    height: 450px;
+}
+.logo-inner{
+    position: relative;
+    display: inline-block;
+}
+#logo_gear {
+    position: relative;
+    width: 300px;
+}
+.rotated{
+    -webkit-animation: rotation 8s infinite linear;
+    -moz-animation: rotation 8s infinite linear;
+}
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to   {-webkit-transform: rotate(359deg);}
+}
+@-moz-keyframes rotation {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+
+#logo_screen {
+    position: absolute;
+    width: 231px;
+    height: auto;
+    top: 135px;
+    left: 35px;
+}
+#logo_screen img{
+    max-width: 100%;
+    height: auto;
+}
+#logo_screen #box1{
+    background-color: black;
+    position: absolute;
+    top: 10px;
+    height: 148px;
+    width: 210px;
+    left: 10px;
+}
+
+#logo_screen #box2{
+    background-color: black;
+    position: absolute;
+    bottom: 55px;
+    right: 12px;
+    width: 127px;
+    height: 30px;
+}
+
+#logo_wrench{
+    position: absolute;
+    opacity: 0;
+    display: none;
+    width: 150px;
+    height: auto;
+    left: 75px;
+    top: 200px;
+}
