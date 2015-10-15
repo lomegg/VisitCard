@@ -1,3 +1,6 @@
+#wrapper{
+    margin-bottom: 100px;
+}
 .white{
     //background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/ricepaper_v3.png);
     background: url(../img/light-diagonal-wide-left-to-right2.png);
@@ -10,7 +13,9 @@
     border: 2px solid rgba(21, 13, 11, 0.09);
     color: white;
 }
+hr.white{
 
+}
 .cutout{
     // background: url(../img/pattern1.png);
     padding: 20px;
@@ -72,4 +77,61 @@
 .spacer-40{
     display: block;
     height: 40px;
+}
+
+/*wtf*/
+.i-will-come{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.to-your-house{
+    font-size: 24px;
+}
+.i-will-come img{
+    max-width: 100%;
+}
+.to-your-house span{
+    color: #28a4c9;
+}
+.table{
+    display: table;
+}
+.table-cell{
+    display: table-cell;
+    float: none;
+    vertical-align: middle;
+}
+
+
+/*footer*/
+
+#footer{
+    background: url(../img/light-diagonal-wide-left-to-right.png);
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+}
+#social{
+    height: 100px;
+    padding: 20px 0;
+    position: relative;
+    float: right;
+}
+#social::after{
+    clear: both;
+}
+#social a{
+    margin: 0 0 0 10px;
+    transition: opacity 0.3s;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+}
+#social a:hover{
+    opacity: 0.65;
+}
+#social a img{
+    height: 100%;
+    width: auto;
 }

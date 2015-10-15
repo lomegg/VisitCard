@@ -1,7 +1,7 @@
 $(function() {
     console.log( "ready!" );
 
-    $( "#box2" ).toggle( "fade", 800);
+    $( "#box2" ).toggle( "fade", 1500);
     setTimeout(function()
     {
         $( "#box1" ).toggle( "fade", 1700);

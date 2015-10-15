@@ -1,11 +1,13 @@
 body{
-    background: url(http://static.turistipercaso.it/image/t/tramonto/tramonto_ejftf.T0.jpg);
+    background: url(../img/wall.jpg);
     background-position: center top;
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-color: #010000;
     font-family: 'Droid Sans', sans-serif;
     font-weight: 400;
+    position: relative;
+    height: 100%;
 }
 
 .title{
