@@ -1,31 +1,7 @@
 #wrapper{
     //margin-bottom: 100px;
-    background-color: rgba(61, 102, 150, 0.06);
+    background-color: #A600a6;
 }
-.white{
-    //background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/ricepaper_v3.png);
-    background: url(../img/light-diagonal-wide-left-to-right2.png);
-    display: block;
-    padding: 30px 20px;
-    -webkit-box-shadow: 4px 3px 27px -2px rgba(0,0,0,0.25);
-    -moz-box-shadow: 4px 3px 27px -2px rgba(0,0,0,0.25);
-    box-shadow: 4px 3px 27px -2px rgba(0,0,0,0.25);
-    border-radius: 15px;
-    border: 2px solid rgba(21, 13, 11, 0.09);
-    color: white;
-}
-hr.white{
-
-}
-.cutout{
-    // background: url(../img/pattern1.png);
-    padding: 20px;
-    height: 2000px;
-    //-webkit-box-shadow: inset 4px 3px 27px -2px rgba(0,0,0,0.25);
-    //-moz-box-shadow: inset 4px 3px 27px -2px rgba(0,0,0,0.25);
-    //box-shadow: inset 4px 3px 27px -2px rgba(0,0,0,0.25);
-}
-
 /* Fancy lines */
 .fancy {
     line-height: 0.5;
