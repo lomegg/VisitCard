@@ -27,3 +27,35 @@ $(function() {
         }
     });
 });
+
+$(".cover").flip({axis: 'x', trigger: 'manual'});
+/*$(function() {
+    var coverState = true;
+    var speed = 500;
+    $( ".cover" ).click(function(speed) {
+        if ( coverState ) {
+            $( ".cover-container" ).animate({
+                top: -130,
+                complete: setTimeout(function(){
+                    $(".cover").flip(true);
+                    setTimeout(function(){
+                        $(".cover-container").css('z-index',5);
+                    }, 170);
+                }, 500)
+            }, speed );
+
+        } else {
+            $(".cover").flip(false);
+            setTimeout(function(){
+                $(".cover-container").css('z-index',12);
+            }, 180);
+            setTimeout(function(){
+                $( ".cover-container" ).animate({
+                    top: 0,
+                }, speed );
+            }, 500)
+
+        }
+        coverState = !coverState;
+    });
+});*/
