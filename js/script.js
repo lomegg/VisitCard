@@ -59,3 +59,35 @@ $(".cover").flip({axis: 'x', trigger: 'manual'});
         coverState = !coverState;
     });
 });*/
+
+
+/*Animate social strip*/
+$(function() {
+    var toggledOnce = false;
+
+    $(".social").hover(function(){
+        if (!toggledOnce){
+            $(".social").animate({
+                left: 0
+            }, 1000 );
+            toggledOnce = true;
+        }
+    });
+
+    $(".social .label").click(function(){
+        var offsetPix = -217;
+        var pos = parseInt($(".social").css('left'));
+        console.log(typeof pos);
+        if (pos === 0) {
+            offsetPix = offsetPix;
+        } else {
+            offsetPix = 0;
+        }
+        $(".social").animate({
+            left: offsetPix
+        }, 1000 );
+
+    });
+
+});
+

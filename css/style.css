@@ -33,16 +33,6 @@
     margin-left: 15px;
 }
 
-/* Speech bubbles */
-
-.speech {
-    position: relative;
-}
-
-.skilltag{
-    font-family: 'Yantramanav', sans-serif;
-    font-weight: 700;
-}
 
 .spacer-10{
     display: block;
@@ -55,30 +45,6 @@
 .spacer-40{
     display: block;
     height: 40px;
-}
-
-/*wtf*/
-.i-will-come{
-    position: relative;
-    width: 100%;
-    text-align: center;
-}
-.to-your-house{
-    font-size: 24px;
-}
-.i-will-come img{
-    max-width: 100%;
-}
-.to-your-house span{
-    color: #28a4c9;
-}
-.table{
-    display: table;
-}
-.table-cell{
-    display: table-cell;
-    float: none;
-    vertical-align: middle;
 }
 
 /*Vertical centering*/
@@ -98,77 +64,68 @@
 
 .vertical-center > .container {
     max-width: 100%;
-
     display: inline-block;
-    vertical-align: middle;  /* vertical alignment of the inline element */
-    /* reset the font property */
-    font: 16px/1 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    vertical-align: middle;
 }
 
-
-/*flagtext*/
-.flagtext{
-    position: relative;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+/* Social */
+.social{
+    background: url("../img/patterns/binding_dark.png");
+    position: absolute;
+    bottom: 50px;
+    border-radius: 3px;
+    -webkit-box-shadow: 2px 2px 10px -1px rgba(0,0,0,0.52);
+    -moz-box-shadow: 2px 2px 10px -1px rgba(0,0,0,0.52);
+    box-shadow: 2px 2px 10px -1px rgba(0,0,0,0.52);
+    left: -217px;
+    animation-timing-function: ease-in;
 }
-.flagtext h1{
-    top: 0;
-    left: 0;
-    margin: 0;
-    text-align: left;
-    margin-left: 40px;
-}
-.flagtext h1.front{
+.social .label{
     display: block;
-    top: -8px;
     position: absolute;
-    z-index: 9;
-    font-size: 160px;
-    line-height: 140px;
-    color: #567C9F;
-    text-shadow: 2px 12px 10px rgba(0, 0, 0, 0.49);
+    right: 0;
+    margin: 35px -20px 0 0;
+    letter-spacing: 4px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    cursor: pointer;
 }
-.flagtext h1.back{
-
-    position: relative;
-    font-size: 160px;
-    line-height: 140px;
-    color: #204d74;
-    text-shadow: 6px 10px 100px rgba(0, 0, 0, 0.49);
-    z-index: 8;
+.social .icons{
+    display: block;
+    margin-right: 25px;
 }
-.flagtext h1 span{
-    margin-left: -10px;
+.social .icon{
+    float: left;
+    margin: 15px 7px;
 }
-/*footer*/
-/*
-#footer{
-    //background: url(../img/light-diagonal-wide-left-to-right.png);
-    position: absolute;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
+.social a{
+    -webkit-transition:background 0.5s ease-in-out;
+    -moz-transition:background 0.5s ease-in-out;
+    -o-transition:background 0.5s ease-in-out;
+    transition:background 0.5s ease-in-out;
+    display: block;
+    height: 60px;
+    width: 60px;
+    background-size: contain;
 }
-#social{
-    height: 100px;
-    padding: 20px 0;
-    position: relative;
-    float: right;
+.social .facebook{
+    background: url('../img/social/facebook0.png');
 }
-#social::after{
-    clear: both;
+.social .facebook:hover{
+    background: url('../img/social/facebook1.png');
 }
-#social a{
-    margin: 0 0 0 10px;
-    transition: opacity 0.3s;
-    -webkit-transition: opacity 0.3s;
-    -moz-transition: opacity 0.3s;
+.social .twitter{
+    background: url('../img/social/twitter0.png');
 }
-#social a:hover{
-    opacity: 0.65;
+.social .twitter:hover{
+    background: url('../img/social/twitter1.png');
 }
-#social a img{
-    height: 100%;
-    width: auto;
-}*/
+.social .linkedin{
+    background: url('../img/social/linkedin0.png');
+}
+.social .linkedin:hover{
+    background: url('../img/social/linkedin1.png');
+}
