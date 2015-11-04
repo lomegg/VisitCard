@@ -1,7 +1,15 @@
 #logo {
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    transform: scale(0.3);
+    -webkit-transform-origin: 50% 0 0;
+    -moz-transform-origin: 50% 0 0;
+    -ms-transform-origin: 50% 0 0;
+    transform-origin: 50% 0 0;
     display: block;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 10px;
     height: 450px;
 }
 .logo-inner{
@@ -62,4 +70,166 @@
     height: auto;
     left: 75px;
     top: 200px;
+}
+
+
+/*Card holder*/
+.cards{
+    position: relative;
+    margin-top: -50px;
+    width: 400px;
+    height: 504px;
+    font-family: 'Podkova', serif;
+}
+.cards .prompt{
+    position: absolute;
+    top: 105px;
+    width: 100%;
+    text-align: center;
+    font-size: 21px;
+    color: #969696;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.68);
+}
+.cards .holder{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: auto;
+}
+.cards .holder-top{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 16;
+    bottom: 0;
+}
+.cards .card{
+    border-radius: 3px;
+    width: 382px;
+    height: 210px;
+    left: 7px;
+    top: 271px;
+    font-weight: bold;
+    font-size: 24px;
+    border-top: 2px solid rgba(160, 160, 160, 0.21);
+    border-right: 2px solid rgba(206, 206, 206, 0.32);
+    border-left: 1px solid rgba(206, 206, 206, 0.16);
+    border-bottom: 2px solid rgba(216, 216, 216, 0.75);
+    -webkit-box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 2px 4px 5px 0px rgba(0,0,0,0.3);
+    position: absolute;
+    z-index: 10;
+    background: url(../img/patterns/white_wall2.png);
+    padding: 10px;
+    text-align: center;
+    cursor: all-scroll;
+}
+.cards .card-2{
+    //z-index: 11;
+    top: 274px;
+}
+.cards .card-3{
+    //z-index: 12;
+    top: 277px;
+}
+.cards .card-4{
+    //z-index: 13;
+    top: 280px;
+}
+/*Bio card*/
+.cards .card-5{
+    //z-index: 14;
+    top: 283px;
+    background: url(../img/patterns/brushed_blue3.png);
+    border-radius: 10px;
+    border-top: 2px solid rgb(19, 55, 86);
+    border-right: 2px solid rgb(19, 55, 86);
+    border-left: 1px solid rgb(22, 91, 145);
+    border-bottom: 2px solid rgb(18, 42, 61);
+}
+.cards .card-6{
+    //z-index: 15;
+    display: none;
+}
+.hr-invisible{
+    width: 100%;
+    height: 0;
+    position: absolute;
+    bottom: 12px;
+}
+.depth {
+    background-color: #565656;
+    color: transparent;
+    text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+
+.info{
+    height: 100%;
+    width: 100%;
+}
+.info .text{
+    float: left;
+    width: 59.9%;
+    color: black;
+    padding-right: 10px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.48);
+}
+.info .text h2{
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-size: 22px;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.48);
+}
+.info .text p{
+    line-height: 20px;
+}
+.info .text p.cite{
+    font-size: 14px;
+    margin-bottom: 14px;
+    text-align: center;
+    font-style: italic;
+    color: #686868;
+}
+.info .text p.email{
+    margin-bottom: 20px;
+}
+.info .text p.phone{
+    //line-height: 20px;
+    font-size: 20px;
+}
+.info .text a{
+    color: #205f93;
+    font-size: 20px;
+}
+.info .text a:hover{
+    text-decoration: none;
+    color: #497DAC;
+}
+.info .frame{
+    float: right;
+    width: 40%;
+    height: 100%;
+    background: url(../img/patterns/carbon_fibre.png);
+    border-radius: 5px;
+    border: 2px solid #042141;
+    overflow: hidden;
+    position: relative;
+}
+.frame img{
+    position: absolute;
+    top: 0;
+    left: -42px;
+    width: auto;
+    height: 100%;
+
 }
