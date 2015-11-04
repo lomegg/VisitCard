@@ -1,6 +1,7 @@
 #wrapper{
     //margin-bottom: 100px;
-    background-color: #A600a6;
+    //background-color: #A600a6;
+    background: url(../img/patterns/whitediamond1.png);
 }
 /* Fancy lines */
 .fancy {
