@@ -28,7 +28,7 @@ app.controller('CardsController', function(){
                     $(".cover").flip(true);
                     setTimeout(function(){
                         $(".cover-container").css('z-index',5);
-                        cardsCtrl.toggleCardsAdvise();
+                        if(!$('.cover .back p').is(":visible")){ cardsCtrl.toggleCardsAdvise(); }
                     }, 170);
                 }, 500)
             }, cardsCtrl.speed );
@@ -123,5 +123,10 @@ app.controller('CardsController', function(){
     this.hideMe = function($event){
         $event.fadeToggle( speed, "linear" );
     };
+
+    //show cardholder as soon as loaded
+    $( "#cardholder" ).animate({
+        top:0
+    }, 1500, 'easeOutCirc' );
 
 });
