@@ -92,7 +92,7 @@ app.controller('CardsController', function(){
 
     $( ".draggable" ).draggable({
         stack: ".stackable",
-        //snap: ".hr-invisible",
+        snap: ".card",
         scroll: false,
         start: function() {
             //Logo animation
