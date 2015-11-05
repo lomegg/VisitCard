@@ -84,7 +84,7 @@
 .social .label{
     display: block;
     position: absolute;
-    right: -27px;
+    left: 224px;
     background: rebeccapurple;
     border-bottom: 1px solid #4C0D8C;
     border-top: 1px solid #7548A2;
@@ -138,6 +138,7 @@
 .social .tooltip{
     opacity: 1;
     display: none;
-    right: -220px;
-    top: 27px;
+    left: 285px;
+    width: 170px;
+    top: 25px;
 }
