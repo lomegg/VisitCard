@@ -1,0 +1,143 @@
+#wrapper{
+    //margin-bottom: 100px;
+    //background-color: #A600a6;
+    background: url(../img/patterns/whitediamond1.png);
+}
+/* Fancy lines */
+.fancy {
+    line-height: 0.5;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.fancy span {
+    display: inline-block;
+    position: relative;
+}
+.fancy span:before,
+.fancy span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    top: 8px;
+    width: 130px;
+}
+.fancy span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+.fancy span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+
+.spacer-10{
+    display: block;
+    height: 10px;
+}
+.spacer-20{
+    display: block;
+    height: 20px;
+}
+.spacer-40{
+    display: block;
+    height: 40px;
+}
+
+/*Vertical centering*/
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+
+    display: flex;
+    align-items: center;
+}
+.vertical-center:before {    /* create a full-height inline block pseudo=element */
+    content: " ";
+    display: inline-block;
+    vertical-align: middle;    /* vertical alignment of the inline element */
+    height: 100%;
+}
+
+.vertical-center > .container {
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Social */
+.social{
+    background: url("../img/patterns/binding_dark.png");
+    position: absolute;
+    bottom: 50px;
+    border-radius: 3px;
+    -webkit-box-shadow: 2px 2px 10px -1px rgba(0,0,0,0.52);
+    -moz-box-shadow: 2px 2px 10px -1px rgba(0,0,0,0.52);
+    box-shadow: 2px 2px 10px -1px rgba(0,0,0,0.52);
+    left: -245px;
+    animation-timing-function: ease-in;
+    z-index: 99;
+}
+.social .label{
+    display: block;
+    position: absolute;
+    right: -27px;
+    background: rebeccapurple;
+    border-bottom: 1px solid #4C0D8C;
+    border-top: 1px solid #7548A2;
+    top: 30px;
+    margin: 0;
+    padding: 9px 12px;
+    letter-spacing: 4px;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    cursor: pointer;
+}
+.social .icons{
+    display: block;
+    margin: 0px 38px 0 20px;
+}
+.social .icon{
+    float: left;
+    margin: 15px 7px;
+}
+.social a{
+    -webkit-transition:background 0.5s ease-in-out;
+    -moz-transition:background 0.5s ease-in-out;
+    -o-transition:background 0.5s ease-in-out;
+    transition:background 0.5s ease-in-out;
+    display: block;
+    height: 60px;
+    width: 60px;
+    background-size: contain;
+}
+.social .facebook{
+    background: url('../img/social/facebook0.png');
+}
+.social .facebook:hover{
+    background: url('../img/social/facebook1.png');
+}
+.social .twitter{
+    background: url('../img/social/twitter0.png');
+}
+.social .twitter:hover{
+    background: url('../img/social/twitter1.png');
+}
+.social .linkedin{
+    background: url('../img/social/linkedin0.png');
+}
+.social .linkedin:hover{
+    background: url('../img/social/linkedin1.png');
+}
+.social .tooltip{
+    opacity: 1;
+    display: none;
+    right: -220px;
+    top: 27px;
+}
