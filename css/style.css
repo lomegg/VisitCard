@@ -135,3 +135,9 @@
 .social .linkedin:hover{
     background: url('../img/social/linkedin1.png');
 }
+.social .tooltip{
+    opacity: 1;
+    display: none;
+    right: -220px;
+    top: 27px;
+}

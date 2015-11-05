@@ -53,8 +53,6 @@ app.controller('CardsController', function(){
             delayTime = 1000;
             console.log('coverState is ' + cardsCtrl.coverState + ' delayTime is ' + delayTime );
             cardsCtrl.flipOver();
-
-
         };
         setTimeout(function(){
             $('.draggable').each(function(i, obj) {
@@ -81,6 +79,7 @@ app.controller('CardsController', function(){
             });
         }, delayTime);
         cardsCtrl.cardsMoved = false;
+        if (cardsCtrl.tooltipState){cardsCtrl.toggleTooltip(300)};
         };
 
     $(".cover").flip({axis: 'x', trigger: 'manual'});
@@ -106,6 +105,7 @@ app.controller('CardsController', function(){
                 }, 1000);
                 $wheelActivated = true;
             };*/
+            if (!cardsCtrl.tooltipState){cardsCtrl.toggleTooltip(900)}
         }
     });
 
@@ -116,6 +116,14 @@ app.controller('CardsController', function(){
             .data("Top", $(obj).position().top)
             .data("Z-index", $(obj).css('z-index'));
     });
+
+
+    //tooltips
+    this.tooltipState = false;
+    this.toggleTooltip = function(speed) {
+        $( ".tooltip" ).fadeToggle( speed, "linear" );
+        cardsCtrl.tooltipState = !cardsCtrl.tooltipState;
+    };
 
 
 });
