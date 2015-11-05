@@ -1,228 +1,235 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="lomegg">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Andrei Lamakin is a nice and reliable guy to do your webwork.">
-    <title>Andrei Lamakin's personal page</title>
-    <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
-    <meta name="author" content="Andrei Lamakin">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-theme.css" rel="stylesheet">
-    <link href="css/overrides.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/cards.css" rel="stylesheet">
-    <!-- Add counters here-->
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Andrei Lamakin is a nice and reliable guy to do your webwork.">
+        <title>Andrei Lamakin's personal page</title>
+        <meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+        <meta name="author" content="Andrei Lamakin">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.css" rel="stylesheet">
+        <link href="css/overrides.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/cards.css" rel="stylesheet">
+        <!-- Add counters here-->
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="img/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 
-    <link href='https://fonts.googleapis.com/css?family=Droid+Sans|Yantramanav:900' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Amiri|Podkova' rel='stylesheet' type='text/css'>
-</head>
-<body>
-    <div id="wrapper">
-        <div class="vertical-center">
+        <link href='https://fonts.googleapis.com/css?family=Droid+Sans|Yantramanav:900' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Amiri|Podkova' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="vertical-center">
 
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-6">
+
+                            <div class="cardholder" ng-controller="CardsController as cards">
+                                <div class="cover-container">
+                                    <div class="cover" ng-click="cards.flip()">
+                                        <div class="front">
+                                            <h3 class="openme">OPEN</h3>
+                                        </div>
+                                        <div class="back"> </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="case">
+
+                                </div>
+                                <div class="cards">
+                                    <div class="card card-0 stackable draggable"></div>
+                                    <div class="card card-1 stackable draggable"></div>
+                                    <div class="card card-2 stackable draggable"></div>
+                                </div>
+                                <div class="bottom stackable">
+
+                                </div>
+                            </div>
+
+
+                            <!--
+                            <div class="cards">
+                                <img src="img/holder.png"  class="holder" alt="Wow, you took them all out!">
+                                <div class="prompt">
+                                    Welcome! <br> Please, take a card.
+                                </div>
+                                <div class="card stackable">
+                                    You asked for this.
+
+                                </div>
+                                <div class="card card-2 stackable">I have a limited amount of those cards, you know.</div>
+                                <div class="card card-3 stackable">
+                                    <div class="depth">Andrey Lamakin</div>
+                                    <div id="logo">
+                                        <div class="logo-inner">
+                                            <img src="img/gear.png" id="logo_gear" alt="The work is on!">
+                                            <div id="logo_screen">
+                                                <img src="img/screen.png" alt=""/>
+                                                <div id="box1"></div>
+                                                <div id="box2"></div>
+                                            </div>
+                                            <img src="img/wrench.png" id="logo_wrench" alt=""/>
+                                        </div>
+                                    </div></div>
+                                <div class="card card-4 stackable">It's always nice to learn something new.</div>
+                                <div class="card card-5 stackable">
+                                    <div class="info">
+                                        <div class="text">
+                                            <h2>Andrey Lamakin</h2>
+                                            <p class="cite">"A guy who makes websites"</p>
+                                            <p class="email">
+                                                <a href="mailto:mail@alweb.space">mail@alweb.space</a>
+                                            </p>
+                                            <p class="phone">
+                                                (+39) 324-988-0652
+                                            </p>
+                                        </div>
+
+                                        <div class="frame">
+
+                                                <img src="img/photov4.png" alt="Andrey himself">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="card card-6 stackable"></div>
+                                <div class="hr-invisible"></div>
+                                <img src="img/holder-top2.png"  class="holder-top stackable" alt="Wow, you took them all out!">
+                            </div>
+
+                        </div>-->
+                    </div>
+                        <div class="col-md-3"></div>
+                </div>
+            </div>
+
+            <!--<div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div id="logo">
+                            <div class="logo-inner">
+                                <img src="img/gear.png" id="logo_gear" alt="The work is on!">
+                                <div id="logo_screen">
+                                    <img src="img/screen.png" alt=""/>
+                                    <div id="box1"></div>
+                                    <div id="box2"></div>
+                                </div>
+                                <img src="img/wrench.png" id="logo_wrench" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="white">
+                            <div class="title">
+                                <h1>Andrei Lamakin</h1>
+                                <div class="fancy">
+                                    <span>Web Developer</span>
+                                </div>
+
+                                <div class="spacer-40"></div>
+                                <div class="i-will-come">
+                                    <div class="row table">
+                                        <div class="col-lg-4 table-cell">
+                                            <div class="to-your-house">Available today!</div>
+                                        </div>
+                                        <div class="col-lg-4 table-cell">
+                                            <img src="img/photov2.png" alt="This is how I look sometimes."/>
+                                        </div>
+                                        <div class="col-lg-4 table-cell">
+                                            <div class="to-your-house">Order now!</div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+
+
+                                <div class="spacer-10"></div>
+                                <h3>Hello. I am an russian web developer living in Italy. </h3>
+                                <h3>
+                                    I love to create stuff. In my time, I have <a href="#portfolio">created some</a> and intend to continue.
+                                </h3>
+                                <h3>Right now, I am looking for a job.</h3>
+
+                                <div class="speech">
+                                    <p>My favorite field of work is </p>
+                                </div>
+                            </div>
+
+                            <hr class="white"/>
+                            <div id="portfolio"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>-->
+        </div>
+        <!--<div id="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-6">
-
-                        <div class="cardholder" ng-controller="CardsController as cards">
-                            <div class="cover-container">
-                                <div class="cover" ng-click="cards.flip()">
-                                    <div class="front">
-                                        <h3 class="openme">OPEN</h3>
-                                    </div>
-                                    <div class="back"> </div>
-
-                                </div>
-
-                            </div>
-                            <div class="case">
-
-                            </div>
-                            <div class="bottom">
-
-                            </div>
-                        </div>
-                        <!--
-                        <div class="cards">
-                            <img src="img/holder.png"  class="holder" alt="Wow, you took them all out!">
-                            <div class="prompt">
-                                Welcome! <br> Please, take a card.
-                            </div>
-                            <div class="card stackable">
-                                You asked for this.
-
-                            </div>
-                            <div class="card card-2 stackable">I have a limited amount of those cards, you know.</div>
-                            <div class="card card-3 stackable">
-                                <div class="depth">Andrey Lamakin</div>
-                                <div id="logo">
-                                    <div class="logo-inner">
-                                        <img src="img/gear.png" id="logo_gear" alt="The work is on!">
-                                        <div id="logo_screen">
-                                            <img src="img/screen.png" alt=""/>
-                                            <div id="box1"></div>
-                                            <div id="box2"></div>
-                                        </div>
-                                        <img src="img/wrench.png" id="logo_wrench" alt=""/>
-                                    </div>
-                                </div></div>
-                            <div class="card card-4 stackable">It's always nice to learn something new.</div>
-                            <div class="card card-5 stackable">
-                                <div class="info">
-                                    <div class="text">
-                                        <h2>Andrey Lamakin</h2>
-                                        <p class="cite">"A guy who makes websites"</p>
-                                        <p class="email">
-                                            <a href="mailto:mail@alweb.space">mail@alweb.space</a>
-                                        </p>
-                                        <p class="phone">
-                                            (+39) 324-988-0652
-                                        </p>
-                                    </div>
-
-                                    <div class="frame">
-
-                                            <img src="img/photov4.png" alt="Andrey himself">
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <div class="card card-6 stackable"></div>
-                            <div class="hr-invisible"></div>
-                            <img src="img/holder-top2.png"  class="holder-top stackable" alt="Wow, you took them all out!">
-                        </div>
-
-                    </div>-->
-                </div>
-                    <div class="col-md-3"></div>
-            </div>
-        </div>
-
-        <!--<div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div id="logo">
-                        <div class="logo-inner">
-                            <img src="img/gear.png" id="logo_gear" alt="The work is on!">
-                            <div id="logo_screen">
-                                <img src="img/screen.png" alt=""/>
-                                <div id="box1"></div>
-                                <div id="box2"></div>
-                            </div>
-                            <img src="img/wrench.png" id="logo_wrench" alt=""/>
+                    <div class="col-lg-12">
+                        <div id="social">
+                            <a href="#email">
+                                <img src="img/social/mail.png" alt="facebook link"/>
+                            </a>
+                            <a href="#facebook">
+                                <img src="img/social/facebook.png" alt="facebook link"/>
+                            </a>
+                            <a href="#linkedin">
+                                <img src="img/social/linkedin.png" alt="linkedin link"/>
+                            </a>
+                            <a href="#twitter">
+                                <img src="img/social/twitter.png" alt="twitter link"/>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="white">
-                        <div class="title">
-                            <h1>Andrei Lamakin</h1>
-                            <div class="fancy">
-                                <span>Web Developer</span>
-                            </div>
-
-                            <div class="spacer-40"></div>
-                            <div class="i-will-come">
-                                <div class="row table">
-                                    <div class="col-lg-4 table-cell">
-                                        <div class="to-your-house">Available today!</div>
-                                    </div>
-                                    <div class="col-lg-4 table-cell">
-                                        <img src="img/photov2.png" alt="This is how I look sometimes."/>
-                                    </div>
-                                    <div class="col-lg-4 table-cell">
-                                        <div class="to-your-house">Order now!</div>
-                                    </div>
-                                </div>
-
-
-
-
-                            </div>
-
-
-                            <div class="spacer-10"></div>
-                            <h3>Hello. I am an russian web developer living in Italy. </h3>
-                            <h3>
-                                I love to create stuff. In my time, I have <a href="#portfolio">created some</a> and intend to continue.
-                            </h3>
-                            <h3>Right now, I am looking for a job.</h3>
-
-                            <div class="speech">
-                                <p>My favorite field of work is </p>
-                            </div>
-                        </div>
-
-                        <hr class="white"/>
-                        <div id="portfolio"></div>
-                    </div>
-                </div>
-
             </div>
         </div>-->
-    </div>
-    <!--<div id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div id="social">
-                        <a href="#email">
-                            <img src="img/social/mail.png" alt="facebook link"/>
-                        </a>
-                        <a href="#facebook">
-                            <img src="img/social/facebook.png" alt="facebook link"/>
-                        </a>
-                        <a href="#linkedin">
-                            <img src="img/social/linkedin.png" alt="linkedin link"/>
-                        </a>
-                        <a href="#twitter">
-                            <img src="img/social/twitter.png" alt="twitter link"/>
-                        </a>
-                    </div>
+            <div class="social">
+                <div class="label noselect">
+                    SOCIAL
+                </div>
+                <div class="icons">
+                    <div class="icon facebook"><a href="https://www.facebook.com/andrey.lamakin" alt="Facebook link"></a></div>
+                    <div class="icon twitter"><a href="https://twitter.com/lomegg" alt="Twitter link"></a></div>
+                    <div class="icon linkedin"><a href="https://it.linkedin.com/pub/andrey-lamakin/104/56a/191" alt="LinkedIn link"></a></div>
+                    <div class="clearfix"></div>
                 </div>
             </div>
-        </div>
-    </div>-->
-        <div class="social">
-            <div class="label">
-                SOCIAL
-            </div>
-            <div class="icons">
-                <div class="icon facebook"><a href="https://www.facebook.com/andrey.lamakin" alt="Facebook link"></a></div>
-                <div class="icon twitter"><a href="https://twitter.com/lomegg" alt="Twitter link"></a></div>
-                <div class="icon linkedin"><a href="https://it.linkedin.com/pub/andrey-lamakin/104/56a/191" alt="LinkedIn link"></a></div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-</body>
-<script src="js/jquery.js" type="text/javascript"></script>
-<script src="js/jquery-ui.js" type="text/javascript"></script>
-<script src="js/jquery.flip.min.js" type="text/javascript"></script>
-<script src="js/script.js" type="text/javascript"></script>
-<script src="js/angular.min.js" type="text/javascript"></script>
-<script src="js/app.js" type="text/javascript"></script>
+    </body>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.js" type="text/javascript"></script>
+    <script src="js/jquery.flip.min.js" type="text/javascript"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/angular.min.js" type="text/javascript"></script>
+    <script src="js/app.js" type="text/javascript"></script>
 </html>

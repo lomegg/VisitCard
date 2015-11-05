@@ -64,3 +64,31 @@
     z-index: 11;
     box-shadow: rgba(255, 255, 255, 0.117647) 4px 4px 18px 5px inset, rgba(0, 0, 0, 0.168627) -4px -4px 18px 5px inset;
 }
+
+/*Cards themselves*/
+
+.cards{
+    position: absolute;
+    top: 10px;
+    width: 100%;
+}
+.cards .card{
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    background: white;
+    border: 2px solid #6c006c;
+    z-index: 10;
+    margin-left:-200px;
+    left:50%;
+    background: url('../img/patterns/handmadepaper.png');
+}
+.card.card-0{
+    
+}
+.card.card-1{
+    top: 5px;
+}
+.card.card-2{
+    top: 10px;
+}
