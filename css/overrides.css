@@ -1,5 +1,8 @@
+html{
+    overflow: hidden;
+}
 body{
-    //background: url(../img/wall.jpg);
+    overflow: hidden;
     background-color: white;
     background-position: center top;
     background-size: 100% auto;
@@ -10,7 +13,6 @@ body{
     position: relative;
     height: 100%;
     overflow-x: hidden;
-    background: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/natural_paper.png);
 }
 
 h2{
