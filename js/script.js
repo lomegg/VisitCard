@@ -6,22 +6,13 @@ $(function() {
 
 $( document ).ready(function() {
 
-    $('.draggable').each(function(i, obj) {
-        //console.log(obj);
-        $(obj).data("Left", $(obj).position().left)
-            .data("Top", $(obj).position().top)
-            .data("Z-index", $(obj).css('z-index'));
-    });
-
-    /*$(".draggable").data("Left", $(".draggable").position().left)
-        .data("Top", $(".draggable").position().top);*/
-
     var $wheel_activated = false;
     $( ".draggable" ).draggable({
         stack: ".stackable",
         snap: ".hr-invisible",
         scroll: false,
         start: function() {
+            //Logo animation
             if (!$wheel_activated){
                 $( "#box2" ).toggle( "fade", 400);
                 setTimeout(function()
@@ -38,6 +29,17 @@ $( document ).ready(function() {
         }
     });
 
+
+    // Record cards position to return to
+    $('.draggable').each(function(i, obj) {
+        //console.log(obj);
+        $(obj).data("Left", $(obj).position().left)
+            .data("Top", $(obj).position().top)
+            .data("Z-index", $(obj).css('z-index'));
+    });
+
+
+    //Return cards back to place
     function returnDraggables(){
         $('.draggable').each(function(i, obj) {
             //console.log(obj);
@@ -55,55 +57,15 @@ $( document ).ready(function() {
 });
 
 $(".cover").flip({axis: 'x', trigger: 'manual'});
-/*$(function() {
-    var coverState = true;
-    var speed = 500;
-    $( ".cover" ).click(function(speed) {
-        if ( coverState ) {
-            $( ".cover-container" ).animate({
-                top: -130,
-                complete: setTimeout(function(){
-                    $(".cover").flip(true);
-                    setTimeout(function(){
-                        $(".cover-container").css('z-index',5);
-                    }, 170);
-                }, 500)
-            }, speed );
-
-        } else {
-            $(".cover").flip(false);
-            setTimeout(function(){
-                $(".cover-container").css('z-index',12);
-            }, 180);
-            setTimeout(function(){
-                $( ".cover-container" ).animate({
-                    top: 0,
-                }, speed );
-            }, 500)
-
-        }
-        coverState = !coverState;
-    });
-});*/
-
 
 /*Animate social strip*/
 $(function() {
-    /*
-    var toggledOnce = false;
 
-
-    $(".social").hover(function(){
-        if (!toggledOnce){
-            $(".social").animate({
-                left: 0
-            }, 1000 );
-            toggledOnce = true;
-        }
-    });*/
+    //save your social position, it's important
+    $(".social").data("Left", $(".social").position().left);
 
     $(".social .label").click(function(){
-        var offsetPix = -217;
+        var offsetPix = $(".social").data("Left");
         var pos = parseInt($(".social").css('left'));
         console.log(typeof pos);
         if (pos === 0) {
