@@ -73,6 +73,7 @@
     width: 100%;
 }
 .cards .card{
+    overflow: hidden;
     position: absolute;
     width: 400px;
     height: 250px;
@@ -89,6 +90,18 @@
 .card.card-1{
     top: 5px;
 }
+.card.card-1 .huge{
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    background: ;
+}
 .card.card-2{
     top: 10px;
+}
+.card.card-2 .photo{
+    max-width: 100%;
+    top: 20px;
+    position: absolute;
+    display: block;
 }
