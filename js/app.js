@@ -28,6 +28,7 @@ app.controller('CardsController', function(){
                     $(".cover").flip(true);
                     setTimeout(function(){
                         $(".cover-container").css('z-index',5);
+                        cardsCtrl.toggleCardsAdvise();
                     }, 170);
                 }, 500)
             }, cardsCtrl.speed );
@@ -44,6 +45,10 @@ app.controller('CardsController', function(){
 
         }
         this.coverState = !this.coverState;
+    };
+
+    this.toggleCardsAdvise = function(){
+        $('.cover .back p').fadeToggle("slow", "linear");
     };
 
     //Return cards back to place
@@ -92,20 +97,8 @@ app.controller('CardsController', function(){
         start: function() {
             //Logo animation
             cardsCtrl.cardsMoved = true;
-            /*if (!$wheelActivated){
-                $( "#box2" ).toggle( "fade", 400);
-                setTimeout(function()
-                {
-                    $( "#box1" ).toggle( "fade", 500);
-                }, 300);
-                setTimeout(function()
-                {
-                    $( "#logo_wrench" ).toggle( "pulsate" );
-                    $( "#logo_gear" ).addClass( "rotated" );
-                }, 1000);
-                $wheelActivated = true;
-            };*/
-            if (!cardsCtrl.tooltipState){cardsCtrl.toggleTooltip(900)}
+            if (!cardsCtrl.tooltipState){cardsCtrl.toggleTooltip(900)};
+            if($('.cover .back p').is(":visible")){ cardsCtrl.toggleCardsAdvise(); }
         }
     });
 
@@ -125,5 +118,10 @@ app.controller('CardsController', function(){
         cardsCtrl.tooltipState = !cardsCtrl.tooltipState;
     };
 
+
+    //toggle
+    this.hideMe = function($event){
+        $event.fadeToggle( speed, "linear" );
+    };
 
 });

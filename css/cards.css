@@ -30,6 +30,15 @@
     width: 100%;
     height: 100%;
 }
+.cover .back p{
+    position: relative;
+    top: 105px;
+    color: rgba(138, 4, 138, 0.64);
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(16, 16, 16, 0.25);
+    font-size: 12px;
+    display: none;
+}
 .cover h3.openme{
     position: absolute;
     bottom: 0;
@@ -94,7 +103,7 @@
     position: absolute;
     width: 2000px;
     height: 2000px;
-    background: ;
+    background: none ;
 }
 .card.card-2{
     top: 10px;
