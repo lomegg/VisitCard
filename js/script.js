@@ -4,10 +4,21 @@ $(function() {
 
 });
 
-$(function() {
+$( document ).ready(function() {
+
+    $('.draggable').each(function(i, obj) {
+        //console.log(obj);
+        $(obj).data("Left", $(obj).position().left)
+            .data("Top", $(obj).position().top)
+            .data("Z-index", $(obj).css('z-index'));
+    });
+
+    /*$(".draggable").data("Left", $(".draggable").position().left)
+        .data("Top", $(".draggable").position().top);*/
+
     var $wheel_activated = false;
-    $( ".cards .card" ).draggable({
-        stack: ".cards .stackable",
+    $( ".draggable" ).draggable({
+        stack: ".stackable",
         snap: ".hr-invisible",
         scroll: false,
         start: function() {
@@ -25,6 +36,21 @@ $(function() {
                 $wheel_activated = true;
             }
         }
+    });
+
+    function returnDraggables(){
+        $('.draggable').each(function(i, obj) {
+            //console.log(obj);
+            $(obj).css('z-index', ($(obj).data("Z-index")));
+            $(obj).animate(
+                { "left": $(obj).data("Left"),
+                    "top": $(obj).data("Top")
+                }, "slow");
+        });
+    };
+
+    $(".social").bind('click', function() {
+        returnDraggables();
     });
 });
 
@@ -63,7 +89,9 @@ $(".cover").flip({axis: 'x', trigger: 'manual'});
 
 /*Animate social strip*/
 $(function() {
+    /*
     var toggledOnce = false;
+
 
     $(".social").hover(function(){
         if (!toggledOnce){
@@ -72,7 +100,7 @@ $(function() {
             }, 1000 );
             toggledOnce = true;
         }
-    });
+    });*/
 
     $(".social .label").click(function(){
         var offsetPix = -217;
