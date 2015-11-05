@@ -34,7 +34,7 @@
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Amiri|Podkova' rel='stylesheet' type='text/css'>
     </head>
-    <body>
+    <body  ng-controller="CardsController as cards">
         <div id="wrapper">
             <div class="vertical-center">
 
@@ -43,9 +43,9 @@
                         <div class="col-md-3"></div>
                         <div class="col-md-6">
 
-                            <div class="cardholder" ng-controller="CardsController as cards">
+                            <div id="cardholder" class="cardholder">
                                 <div class="cover-container">
-                                    <div class="cover" ng-click="cards.flip()">
+                                    <div class="cover" ng-click="cards.flipOver()">
                                         <div class="front">
                                             <h3 class="openme">OPEN</h3>
                                         </div>
@@ -215,7 +215,7 @@
             </div>
         </div>-->
             <div class="social">
-                <div class="label noselect">
+                <div class="label noselect"  ng-click="cards.pullSocial()">
                     SOCIAL
                 </div>
                 <div class="icons">
@@ -229,7 +229,7 @@
     <script src="js/jquery.js" type="text/javascript"></script>
     <script src="js/jquery-ui.js" type="text/javascript"></script>
     <script src="js/jquery.flip.min.js" type="text/javascript"></script>
-    <script src="js/script.js" type="text/javascript"></script>
     <script src="js/angular.min.js" type="text/javascript"></script>
     <script src="js/app.js" type="text/javascript"></script>
+    <!--<script src="js/script.js" type="text/javascript"></script>-->
 </html>
