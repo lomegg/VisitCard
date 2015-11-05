@@ -16,9 +16,9 @@ body{
 }
 
 h2{
-    color: #042543;
-    text-shadow: 6px 10px 100px rgba(0, 0, 0, 0.49);
-    text-shadow: 7px 3px 27px rgba(0, 0, 0, 0.49);
+    color: #6C006C;
+    /* text-shadow: 6px 10px 100px rgba(0, 0, 0, 0.49); */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.49);
     font-weight: bold;
     font-size: 40px;
 }
