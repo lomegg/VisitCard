@@ -129,4 +129,83 @@ app.controller('CardsController', function(){
         top:0
     }, 1500, 'easeOutCirc' );
 
+    //labels for last card
+    this.labels = [
+        {
+            name: 'Ruby',
+            description: 'Ruby language',
+            image: 'img/logos/ruby.png'
+        },
+        {
+            name: 'Ruby on Rails',
+            description: 'Ruby on Rails MVC framework',
+            image: 'img/logos/rails.png'
+        },
+        {
+            name: 'MongoDB',
+            description: 'NoSQL database',
+            image: 'img/logos/mongodb.png'
+        },
+        {
+            name: 'JavaSript',
+            description: 'JavaScript language',
+            image: 'img/logos/js.png'
+        },
+        {
+            name: 'CoffeeScript',
+            description: 'a little language that compiles into JavaScript',
+            image: 'img/logos/coffee.png'
+        },
+        {
+            name: 'NodeJS',
+            description: 'Javascript-based back-end platform',
+            image: 'img/logos/node-js.png'
+        },
+        {
+            name: 'AngularJS',
+            description: 'Front-end MVC framevork',
+            image: 'img/logos/angular-js.jpg'
+        },
+        {
+            name: 'GIT',
+            description: 'Version Control System',
+            image: 'img/logos/git.jpg'
+        },
+        {
+            name: 'HTML 5',
+            description: 'HyperText Markup Language 5',
+            image: 'img/logos/html.jpg'
+        },
+        {
+            name: 'SLIM',
+            description: 'Template language',
+            image: 'img/logos/slim.jpg'
+        },
+        {
+            name: 'HAML',
+            description: 'Template language',
+            image: 'img/logos/haml.jpg'
+        },
+        {
+            name: 'CSS 3',
+            description: 'Cascading Style Sheets 3',
+            image: 'img/logos/css.jpg'
+        },
+        {
+            name: 'Sass',
+            description: 'CSS based styling language',
+            image: 'img/logos/sass.jpg'
+        },
+        {
+            name: 'LESS',
+            description: 'CSS based styling language',
+            image: 'img/logos/less.png'
+        },
+        {
+            name: 'Bootstrap',
+            description: 'mobile first front-end framework',
+            image: 'img/logos/bootstrap.jpg'
+        }
+    ];
 });
+
