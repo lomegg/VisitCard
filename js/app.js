@@ -172,17 +172,17 @@ app.controller('CardsController', function(){
         {
             name: 'AngularJS',
             description: 'Front-end MVC framevork',
-            image: 'img/logos/angular-js.jpg'
+            image: 'img/logos/angular-js.png'
         },
         {
             name: 'GIT',
             description: 'Version Control System',
-            image: 'img/logos/git.jpg'
+            image: 'img/logos/git.png'
         },
         {
             name: 'HTML 5',
             description: 'HyperText Markup Language 5',
-            image: 'img/logos/html.jpg'
+            image: 'img/logos/html.png'
         },
         {
             name: 'SLIM',
@@ -192,12 +192,12 @@ app.controller('CardsController', function(){
         {
             name: 'HAML',
             description: 'Template language',
-            image: 'img/logos/haml.jpg'
+            image: 'img/logos/haml.png'
         },
         {
             name: 'CSS 3',
             description: 'Cascading Style Sheets 3',
-            image: 'img/logos/css.jpg'
+            image: 'img/logos/css.png'
         },
         {
             name: 'Sass',
@@ -212,7 +212,7 @@ app.controller('CardsController', function(){
         {
             name: 'Bootstrap',
             description: 'mobile first front-end framework',
-            image: 'img/logos/bootstrap.jpg'
+            image: 'img/logos/bootstrap.png'
         }
     ];
 });
