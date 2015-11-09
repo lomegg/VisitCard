@@ -47,7 +47,7 @@
     width: 100%;
     color: #FFBB00;
     font-weight: bold;
-    letter-spacing: 5px;
+    font-size: 50px;
     text-shadow: 0px 2px 0px #A67A00;
 }
 .cover h3.openme:hover{
