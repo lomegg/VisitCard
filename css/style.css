@@ -66,6 +66,18 @@
     vertical-align: middle;
 }
 
+/* Loading */
+.loading{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 0px 2px 0px #A67A00;
+    color: #FFBB00;
+    font-family: 'Roboto', sans-serif;
+}
 /* Social */
 .social{
     background: url("../img/patterns/binding_dark.png");
