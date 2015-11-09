@@ -102,6 +102,13 @@
 .card.card-0{
     
 }
+.card.card-0 h5{
+    font-family: 'Droid Sans', sans-serif;
+    color: #6C006C;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
 .card.card-0 .skill-label{
     position: relative;
     display: inline-block;

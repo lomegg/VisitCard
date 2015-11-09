@@ -58,10 +58,10 @@
                                 </div>
                                 <div class="cards">
                                     <div class="card card-0 stackable draggable cardtext">
-                                        <h5>My skills</h5>
+                                        <h5>{{cards.skillsHeader}}</h5>
                                         <div class="labels">
                                             <div class="skill-label" ng-repeat="label in cards.labels">
-                                                <img ng-src="{{label.image}}" alt="{{label.name}} - {{label.description}}"/>
+                                                <img ng-src="{{label.image}}" alt="{{label.name}} - {{label.description}}" ng-mouseover="cards.changeSkillsHeader(label)"/>
                                             </div>
                                         </div>
 

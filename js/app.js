@@ -129,6 +129,14 @@ app.controller('CardsController', function(){
         top:0
     }, 1500, 'easeOutCirc' );
 
+
+    //labels functions
+    this.skillsHeader = "My skills";
+    this.changeSkillsHeader = function(label){
+        cardsCtrl.skillsHeader =  label.name + " - " + label.description;
+    };
+
+
     //labels for last card
     this.labels = [
         {
@@ -153,7 +161,7 @@ app.controller('CardsController', function(){
         },
         {
             name: 'CoffeeScript',
-            description: 'a little language that compiles into JavaScript',
+            description: 'a Javascript helper language',
             image: 'img/logos/coffee.png'
         },
         {
