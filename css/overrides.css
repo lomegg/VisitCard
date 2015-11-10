@@ -38,3 +38,17 @@ h2{
 .container{
 
 }
+
+
+/* Custom width limits */
+.visible-600{
+    display: none;
+}
+@media (max-width: 600px){
+    .hidden-600 {
+        display: none !important;
+    }
+    .visible-600{
+        display: block !important;
+    }
+}
