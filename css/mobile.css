@@ -2,11 +2,35 @@
     background: white;
     width: 100%;
     border-radius: 3px;
-    margin: 20px;
+    padding: 10px 20px 20px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.22);
+    text-align: center;
 }
-.mobile-text h1{
+.mobile-text > h1{
+    margin-bottom: 5px;
+}
+.mobile-text > h3{
+    margin-top: 0;
+}
 
+
+.mobile-text .text{
+    margin-top: 30px;
 }
+
 .mobile-text .labels{
+    margin-top: 30px;
     position: relative;
+    text-align: center;
+}
+.mobile-text .labels h5{
+    height: 30px;
+    color: #472266;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.mobile-text .labels .skill-label{
+    float: none;
 }

@@ -11,6 +11,8 @@
         <link href="css/overrides.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
         <link href="css/cards.css" rel="stylesheet">
+        <link href="css/mobile.css" rel="stylesheet">
+        <link href="css/media.css" rel="stylesheet">
         <!-- Add counters here-->
         <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
@@ -43,7 +45,7 @@
                             <div id="cardholder" class="cardholder">
                                 <div class="cover-container">
                                     <div class="cover" ng-click="cards.flipOver()">
-                                        <div class="front cover-front-texture">
+                                        <div class="front cover-front-texture noselect">
                                             <h3 class="openme">_</h3>
                                         </div>
                                         <div class="back cover-back-texture">
@@ -75,7 +77,7 @@
                                             <div class="label"></div>
                                         </div>
                                         <h3>Hi! Thanks for stopping by.</h3>
-                                        <p>For about 3 years I've been creating web applications based on Ruby on Rails and MongoDB. I like front-end and making people smile.</p>
+                                        <p>For about 3 years I develop web applications based on Ruby on Rails and MongoDB. I like front-end and making people smile.</p>
                                         <p>Now I enjoy learning the <a href="http://mean.io/">MEAN</a> stack. </p>
                                         <p>I mostly work freelance but will consider job offers.</p>
                                     </div>
@@ -107,27 +109,40 @@
                         <div class="col-md-3"></div>
                 </div>
                     <div class="row visible-600">
-                        <h2>VISIBLE 600</h2>
-                    </div>
-                </div>
+                        <div class="col-xs-12">
+                            <div class="mobile-text">
+                                <h1>Andrey Lamakin</h1>
+                                <h3>web developer</h3>
 
-            <!--<div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div id="logo">
-                            <div class="logo-inner">
-                                <img src="img/gear.png" id="logo_gear" alt="The work is on!">
-                                <div id="logo_screen">
-                                    <img src="img/screen.png" alt=""/>
-                                    <div id="box1"></div>
-                                    <div id="box2"></div>
+                                <div class="contacts">
+                                    <p class="email">
+                                        <a href="mailto:gaugvitz@gmail.com">gaugvitz@gmail.com</a>
+                                    </p>
+                                    <p class="phone">
+                                        (+39) 324-988-0652
+                                    </p>
                                 </div>
-                                <img src="img/wrench.png" id="logo_wrench" alt=""/>
+
+                                <div class="text">
+                                    <h3>Hi! Thanks for stopping by.</h3>
+                                    <p>For about 3 years I develop web applications based on Ruby on Rails and MongoDB. I like front-end and making people smile.</p>
+                                    <p>Now I enjoy learning the <a href="http://mean.io/">MEAN</a> stack. </p>
+                                    <p>I mostly work freelance but will consider job offers.</p>
+
+
+                                </div>
+                                <div class="labels noselect">
+                                    <h5>{{cards.skillsHeader}}</h5>
+                                    <div class="skill-label" ng-repeat="label in cards.labels">
+                                        <img ng-src="{{label.image}}" alt="{{label.name}} - {{label.description}}" ng-mouseover="cards.changeSkillsHeader(label)"/>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>-->
+
         </div>
             <div class="social">
                 <div class="label noselect"  ng-click="cards.pullSocial()">
@@ -153,5 +168,4 @@
     <script src="js/jquery.flip.min.js" type="text/javascript"></script>
     <script src="js/angular.min.js" type="text/javascript"></script>
     <script src="js/app.js" type="text/javascript"></script>
-    <!--<script src="js/script.js" type="text/javascript"></script>-->
 </html>
