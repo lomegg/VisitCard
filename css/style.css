@@ -6,8 +6,15 @@
     position: fixed;
     height: 100%;
     width: 100%;
-    background: #6A3397;
     z-index: 100;
+    background: rgba(143,79,196,1);
+    background: -moz-linear-gradient(top, rgba(143,79,196,1) 0%, rgba(88,45,123,1) 91%, rgba(88,45,123,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(143,79,196,1)), color-stop(91%, rgba(88,45,123,1)), color-stop(100%, rgba(88,45,123,1)));
+    background: -webkit-linear-gradient(top, rgba(143,79,196,1) 0%, rgba(88,45,123,1) 91%, rgba(88,45,123,1) 100%);
+    background: -o-linear-gradient(top, rgba(143,79,196,1) 0%, rgba(88,45,123,1) 91%, rgba(88,45,123,1) 100%);
+    background: -ms-linear-gradient(top, rgba(143,79,196,1) 0%, rgba(88,45,123,1) 91%, rgba(88,45,123,1) 100%);
+    background: linear-gradient(to bottom, rgba(143,79,196,1) 0%, rgba(88,45,123,1) 91%, rgba(88,45,123,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8f4fc4', endColorstr='#582d7b', GradientType=0 );
 }
 .loading{
     position: absolute;
@@ -19,6 +26,11 @@
     text-shadow: 0px 2px 0px #A67A00;
     color: #FFBB00;
     font-family: 'Roboto', sans-serif;
+    animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+    50% { opacity: 0.0; }
 }
 
 /* Fancy lines */
