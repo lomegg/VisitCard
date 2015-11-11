@@ -133,7 +133,7 @@ app.controller('CardsController', function(){
     //labels functions
     this.skillsHeader = "My skills";
     this.changeSkillsHeader = function(label){
-        cardsCtrl.skillsHeader =  label.name + " — " + label.description;
+        cardsCtrl.skillsHeader =  label.name + " - " + label.description;
     };
 
 
