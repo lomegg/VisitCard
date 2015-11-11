@@ -1,7 +1,10 @@
 #wrapper{
     //margin-bottom: 100px;
     //background-color: #A600a6;
-    background: url(../img/patterns/whitediamond1.png);
+    //background: url(../img/patterns/whitediamond3.png);
+    background-color: #6f00c9;
+    background-image: url(../img/patterns/white-wall.png);
+
 }
 /* Fancy lines */
 .fancy {
@@ -95,9 +98,10 @@
     display: block;
     position: absolute;
     left: 224px;
-    background: rebeccapurple;
-    border-bottom: 1px solid #4C0D8C;
-    border-top: 1px solid #7548A2;
+    background-color: rgb(48, 7, 88);
+    background-image: url(../img/patterns/brushed-alum.png);
+    border-bottom: 1px solid #59476B;
+    border-top: 1px solid #5E5865;
     top: 30px;
     margin: 0;
     padding: 9px 12px;
