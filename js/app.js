@@ -133,7 +133,7 @@ app.controller('CardsController', function(){
     //labels functions
     this.skillsHeader = "My skills";
     this.changeSkillsHeader = function(label){
-        cardsCtrl.skillsHeader =  label.name + " - " + label.description;
+        cardsCtrl.skillsHeader =  label.name + " — " + label.description;
     };
 
 
@@ -141,12 +141,12 @@ app.controller('CardsController', function(){
     this.labels = [
         {
             name: 'Ruby',
-            description: 'Ruby language',
+            description: 'high-level programming language',
             image: 'img/logos/ruby.png'
         },
         {
             name: 'Ruby on Rails',
-            description: 'Ruby on Rails MVC framework',
+            description: 'MVC framework',
             image: 'img/logos/rails.png'
         },
         {
@@ -156,7 +156,7 @@ app.controller('CardsController', function(){
         },
         {
             name: 'JavaSript',
-            description: 'JavaScript language',
+            description: 'programming language',
             image: 'img/logos/js.png'
         },
         {
