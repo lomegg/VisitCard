@@ -3,17 +3,12 @@ html{
 }
 body{
     overflow: hidden;
-    background-color: white;
-    background-position: center top;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    //background-color: #010000;
     font-family: 'Droid Sans', sans-serif;
     font-weight: 400;
     position: relative;
     height: 100%;
-    overflow-x: hidden;
     background-color: #6f00c9;
+    background-image: url(../img/patterns/white-wall.png);
 }
 
 h2{
