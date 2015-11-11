@@ -33,4 +33,9 @@
 
 .mobile-text .labels .skill-label{
     float: none;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin: 10px;
 }
