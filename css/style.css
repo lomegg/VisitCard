@@ -180,3 +180,7 @@
     user-select: none;
 }
 
+body:after{
+    display:none;
+    content: url('../img/social/facebook1.png') url('../img/social/twitter1.png') url('../img/social/linkedin1.png');
+}
