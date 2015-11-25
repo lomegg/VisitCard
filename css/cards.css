@@ -28,7 +28,7 @@
     background: url(../img/patterns/symphony.png);
 }
 .cover-back-texture{
-    //background-color: #8a005e;
+    box-shadow: rgba(0, 0, 0, 0.380392) 3px 0px 18px 3px inset;
     background-color: rgb(181, 100, 191);
     background-image: url(../img/patterns/brushed-alum.png);
 }
