@@ -28,7 +28,7 @@ app.controller('CardsController', function(){
                     $(".cover").flip(true);
                     setTimeout(function(){
                         $(".cover-container").css('z-index',5);
-                        if(!$('.cover .back p').is(":visible")){ cardsCtrl.toggleCardsAdvise(); }
+                        if(!$('.cover .back p').is(":visible") && !cardsCtrl.cardsMoved){ cardsCtrl.toggleCardsAdvise(); }
                     }, 170);
                 }, 500)
             }, cardsCtrl.speed );
