@@ -7,8 +7,10 @@ body{
     font-weight: 400;
     position: relative;
     height: 100%;
-    background-color: #6f00c9;
-    background-image: url(../img/patterns/white-wall.png);
+    background: #a600a6;
+    background: -webkit-linear-gradient(to right, #a600a6 , #333399);
+    background: linear-gradient(to right, #a600a6 , #333399);
+    /*background-image: url(../img/patterns/white-wall.png);*/
     min-width: 250px;
 }
 
